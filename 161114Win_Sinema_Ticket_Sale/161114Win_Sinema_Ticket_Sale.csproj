@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E3AD5E5-B80F-4E73-894F-03D689F894A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_161114Win_Sinema_Ticket_Sale</RootNamespace>
+    <AssemblyName>161114Win_Sinema_Ticket_Sale</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>CinemaTicketSale</ProductName>
+    <PublisherName>DesktopApp</PublisherName>
+    <SuiteName>Nuriyya</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Martin-Berube-People-Boys.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>AB67590357421A7555998FB8A791A586D5C9B040</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>161114Win_Sinema_Ticket_Sale_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutCinemaTicketSaleProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutCinemaTicketSaleProject.Designer.cs">
+      <DependentUpon>AboutCinemaTicketSaleProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Bs_SinemaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Bs_SinemaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CinemaForm.Designer.cs">
+      <DependentUpon>CinemaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionClass.cs" />
+    <Compile Include="CountryClass.cs" />
+    <Compile Include="DeleteTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteTicketForm.Designer.cs">
+      <DependentUpon>DeleteTicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordForm.Designer.cs">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListOfMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListOfMovies.Designer.cs">
+      <DependentUpon>ListOfMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Movies.Designer.cs">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfisParol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OfisParol.Designer.cs">
+      <DependentUpon>OfisParol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SaleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaleForm.Designer.cs">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeansForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeansForm.Designer.cs">
+      <DependentUpon>SeansForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketForm.Designer.cs">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketSaled.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketSaled.Designer.cs">
+      <DependentUpon>TicketSaled.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TicketSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TicketSearch.Designer.cs">
+      <DependentUpon>TicketSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerClass.cs" />
+    <Compile Include="WorkersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkersForm.Designer.cs">
+      <DependentUpon>WorkersForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutCinemaTicketSaleProject.resx">
+      <DependentUpon>AboutCinemaTicketSaleProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CinemaForm.resx">
+      <DependentUpon>CinemaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteTicketForm.resx">
+      <DependentUpon>DeleteTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordForm.resx">
+      <DependentUpon>ForgotPasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListOfMovies.resx">
+      <DependentUpon>ListOfMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movies.resx">
+      <DependentUpon>Movies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OfisParol.resx">
+      <DependentUpon>OfisParol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaleForm.resx">
+      <DependentUpon>SaleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeansForm.resx">
+      <DependentUpon>SeansForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketForm.resx">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketSaled.resx">
+      <DependentUpon>TicketSaled.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TicketSearch.resx">
+      <DependentUpon>TicketSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkersForm.resx">
+      <DependentUpon>WorkersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Bs_SinemaDataSet.xsc">
+      <DependentUpon>Bs_SinemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Bs_SinemaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Bs_SinemaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Bs_SinemaDataSet.xss">
+      <DependentUpon>Bs_SinemaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20150414054316-cat-cinema_good.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3078493320_5fbf5f618d_o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login_key_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginRed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2674426.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\04-Interstellar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\220px-Umudunu_Kaybetme_afiş.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\241201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\304518.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26744261.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6595896553_b0bccea794_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\another-earth-movie-poster-01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar_ver2_xlg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_27A360-541841-5F9C58-CDA28A-FDD036-174C5E.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\incir-receli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\limitless-uk-movie-poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love__rosie__2015____movie_poster_by_blantonl98-d8gtc68.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\martian_ver2_xxlg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shakespeare-in-Love-Movie-Poster-shakespeare-in-love-29586173-800-1067.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tam_Hazir_16_resized.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The_Danish_Girl_%28film%29_poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tumblr_nqudrgFTNU1rpnofto1_1280.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\url.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Who_am_I_movie_poster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bfoG--a5LOI.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_blue.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_gray.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chair_Red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cms-image-000009286.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cms-image-0000092861.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muro-blu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall-1114472_960_720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\muro-blu1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cms-image-0000092862.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\128002-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cms-image-0000092863.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Bs_Sinema.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Bs_Sinema_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Martin-Berube-People-Boys.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.SqlServer.SqlLocalDB.11.1">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2012 Express LocalDB</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
